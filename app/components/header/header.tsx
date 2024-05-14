@@ -55,6 +55,12 @@ const Header = () => {
       </nav>
       <menu className="hidden max-sm:flex items-center">
         <Hamburger size={25} />
+        <button
+            className="text-xs font-semibold text-[#505050] cursor-none uppercase w-14"
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          >
+            {theme === "dark" ? "light" : "dark"}
+          </button>
       </menu>
     </header>
   );

@@ -43,9 +43,7 @@ const ProviderPreferences: React.FC<{
   useEffect(() => {
     rawSetTheme(theme);
   }, [theme]);
-  const NotificationsRead = () => {};
-  const NotificationsDelete = () => {};
-
+  
   const contextValue: ContextPreferencesT = {
     setTheme,
     theme,

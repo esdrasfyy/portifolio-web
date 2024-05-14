@@ -6,7 +6,7 @@ function Cursor() {
   const [y, setY] = useState(0);
 
   const animateMe = (e: any) => {
-    const span = e.currentTarget.querySelector("span");
+    const span = e.currentTarget.querySelector(".animation-transform");
     const {
       offsetX,
       offsetY,

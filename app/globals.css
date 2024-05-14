@@ -16,18 +16,32 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+*,
+* {
+  margin: 0;
+  padding: 0;
+  cursor: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+.cursor {
+  position: fixed;
+  pointer-events: none;
+  background-color: #fff;
+  color: #000;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  transition: transform 300ms;
+  transform: translate(-50%, -50%) scale(3);
+  padding: 0.4rem;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background: url("/logo.svg") no-repeat center center;
+  background-size: 150px;
 }

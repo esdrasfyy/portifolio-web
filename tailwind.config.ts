@@ -14,7 +14,15 @@ const config: Config = {
       },
       textColor: {
         primary: "var(--color-text-primary)",
-        secondary:"var(--color-text-secondary)",
+        secondary: "var(--color-text-secondary)",
+      },
+    },
+    colors: {
+      custom: {
+        primaryAqua: "var(--color-primary-aqua)",
+        secondaryAqua: "var(--color-secondary-aqua)",
+        primaryPurple: "var(--color-primary-purple)",
+        secondaryPurple: "var(--color-secondary-purple)",
       },
     },
   },

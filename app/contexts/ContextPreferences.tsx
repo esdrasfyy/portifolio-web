@@ -18,11 +18,14 @@ const getInitialTheme = () => {
 };
 
 const getInitialLang = () => {
-  if (typeof window !== "undefined") {
-    const storedLang = localStorage.getItem("i18nextLng");
-    return storedLang || navigator.language;
+  if (typeof navigator !== "undefined") {
+    if (typeof window !== "undefined") {
+      const storedLang = localStorage.getItem("i18nextLng");
+      return storedLang || navigator.language;
+    }
+    return navigator.language;
   }
-  return navigator.language;
+  return "pt-BR"
 };
 
 const ContextPreferences = createContext<ContextPreferencesT | undefined>(
@@ -73,7 +76,7 @@ const ProviderPreferences: React.FC<{
   const toggleLang = (value: string) => {
     localStorage.setItem("i18nextLng", value);
     setLang(value);
-    return window.location = window.location
+    return (window.location = window.location);
   };
 
   const contextValue: ContextPreferencesT = {

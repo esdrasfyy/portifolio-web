@@ -101,23 +101,18 @@
   width: calc(6.25vw - 2px);
   height: calc(6.25vw - 2px);
   background: var(--color-bg-primary);
-  z-index: 2;
+  z-index: 40;
   transition: 1.5s;
-}
-section span:hover {
-  background: var(--color-bg-secondary);
-  opacity: 0.9;
-  transition: 0s;
 }
 
 @media (max-width: 900px) {
-  section span {
+  .animated-background span {
     width: calc(10vw - 2px);
     height: calc(10vw - 2px);
   }
 }
 @media (max-width: 600px) {
-  section span {
+  .animated-background span {
     width: calc(20vw - 2px);
     height: calc(20vw - 2px);
   }

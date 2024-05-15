@@ -4,9 +4,9 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="flex overflow-y-hidden h-[100vh]  flex-col items-center justify-center  bg-blend-difference text-white">
+    <main className="flex overflow-y-hidden h-[100vh]  flex-col items-center justify-end  bg-blend-difference text-white">
       <BackgroundHome />
-      <div className="z-50 flex w-full h-screen justify-between px-12 max-sm:px-4 relative pt-16">
+      <div className="z-50 flex w-full min-h-[90vh] justify-between px-12 max-sm:px-4 relative">
         <aside className="flex h-full justify-end flex-col items-center gap-4 max-sm:hidden">
           <button className="text-2xl">
             <FaGithub />
@@ -14,7 +14,7 @@ export default function Home() {
           <span className="w-[1px] h-72 bg-custom-secondaryAqua"></span>
         </aside>
         <section className="w-full h-full flex flex-col justify-between overflow-hidden px-11 max-sm:px-0">
-          <div className="w-full flex flex-col justify-center items-center mt-[10vh]">
+          <div className="w-full flex flex-col justify-center items-center mt-[10vh] max-md:mt-0">
             <h1 className="text-8xl font-thin flex flex-col text-center w-full max-lg:text-6xl max-md:text-4xl">
               <span className="w-full h-fit">WELCOME TO MY</span>{" "}
               <span className="mx-auto w-fit h-fit">
@@ -29,7 +29,7 @@ export default function Home() {
             <svg
               aria-label="Vercel's logo, a triangle, sits in the center of a grid, surrounded by rays of light which are the colors of the rainbow."
               fill="none"
-              className="absolute top-1/2 min-w-[80vw]  left-1/2 w-[70vw] -translate-x-1/2 -translate-[300px] rotate-180"
+              className="absolute top-1/2 min-w-[80vw]  left-1/2 w-[70vw] -translate-x-1/2 -translate-y-[100px] rotate-180"
               role="img"
               viewBox="0 0 1200 700"
             >
@@ -599,7 +599,7 @@ export default function Home() {
               ></line>
             </svg>
           </div>
-          <div className="flex w-full justify-between max-sm:flex-col gap-14">
+          <div className="flex w-full text-sm max-sm:text-xs justify-between max-sm:flex-col gap-7 uppercase pb-4">
             <p className="w-72 text-start">
               Software Engineer and Product Designer, currently available for
               work.
@@ -607,7 +607,7 @@ export default function Home() {
             <div className="flex justify-end">
 
             <p className="w-72 text-end">
-              Focused on interfaces and xp, working remotely from Sao Paulo.
+              Focused on interfaces and xp, working remotely from Sao Paulo - Brazil.
             </p>
             </div>
           </div>

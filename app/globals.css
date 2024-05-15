@@ -122,3 +122,13 @@ section span:hover {
     height: calc(20vw - 2px);
   }
 }
+
+.triangle_triangle__00icu {
+  width: 100%;
+  inset: 0;
+  height: 100%;
+  position: absolute;
+  z-index: 50;
+  bottom: 0;
+  transform: rotate(180deg);
+}

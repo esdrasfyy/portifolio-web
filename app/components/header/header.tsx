@@ -9,7 +9,7 @@ const Header = () => {
   const { theme, onOpen, menu, toggleTheme, toggleLang, lang } =
     contextPreferences;
   return (
-    <header className="fixed top-0 left-0 flex w-full justify-between items-center px-8 bg-secondary text-primary gap-14 max-sm:px-4 z-50 shadow-snipped">
+    <header className="fixed top-0 left-0 flex w-full justify-between items-center px-11 bg-secondary text-primary gap-14 max-sm:px-4 z-50 shadow-snipped">
       <Link href="/" className="flex items-center">
         {theme !== "light" ? (
           <span className="logo-white"></span>

@@ -47,7 +47,7 @@ function Cursor() {
     };
   }, []);
   return (
-    <span className="cursor" style={{ left: x + "px", top: y + "px" }}></span>
+    <span className="cursor max-sm:hidden" style={{ left: x + "px", top: y + "px" }}></span>
   );
 }
 

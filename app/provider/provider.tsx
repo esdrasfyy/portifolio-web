@@ -7,7 +7,7 @@ export function Providers({
   initialTheme,
 }: {
   children: React.ReactNode;
-  initialTheme: any;
+  initialTheme?: any;
 }) {
   return (
     <ProviderPreferences initialTheme={initialTheme}>

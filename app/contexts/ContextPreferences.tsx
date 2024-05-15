@@ -22,9 +22,18 @@ const ContextPreferences = createContext<ContextPreferencesT | undefined>(
 
 const ProviderPreferences: React.FC<{
   children: ReactNode;
-  initialTheme: any;
+  initialTheme?: any;
 }> = ({ initialTheme, children }) => {
   const [theme, setTheme] = useState<string>(getInitialTheme);
+  const [menu, setMenu] = useState(false);
+  const onClose = () => {
+    setMenu(false);
+  };
+
+  const onOpen = () => {
+    setMenu(true);
+  };
+
   const rawSetTheme = (rawTheme: any) => {
     const root =
       typeof window !== "undefined" ? window.document.documentElement : null;
@@ -41,12 +50,24 @@ const ProviderPreferences: React.FC<{
   }
 
   useEffect(() => {
+    console.log(theme);
+
     rawSetTheme(theme);
   }, [theme]);
-  
+
+  const toggleTheme = () => {
+    if (theme === "dark") {
+      return setTheme("light");
+    }
+    return setTheme("dark");
+  };
   const contextValue: ContextPreferencesT = {
     setTheme,
     theme,
+    toggleTheme,
+    onClose,
+    onOpen,
+    menu,
   };
 
   return (

@@ -40,7 +40,7 @@ export default function Home() {
               </span>{" "}
               <span className="mx-auto w-fit h-fit">
                 <span>PORTIFOLIO</span>
-                <p className="text-xl flex w-full text-end items-end justify-end max-md:text-sm gap-2">
+                <p className="text-xl flex w-full text-end items-end justify-end max-md:text-sm gap-1">
                   <span>{i18n.t("home.titles.five")}</span> Fernando Esdras
                 </p>
               </span>

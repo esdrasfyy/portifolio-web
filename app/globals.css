@@ -127,3 +127,15 @@
   bottom: 0;
   transform: rotate(180deg);
 }
+.line{
+  position: relative;
+}
+.line::before {
+  content: "";
+  width: 105%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  background-color: var(--color-text-primary);
+}

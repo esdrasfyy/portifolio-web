@@ -1,3 +1,4 @@
+
 const messages = {
   en: {
     translations: {
@@ -9,6 +10,20 @@ const messages = {
         dark: "DARK",
         light: "LIGHT",
       },
+      home:{
+        titles:{
+          one: "WELCOME",
+          two: "TO",
+          three: "MY",
+          four: "PORTIFOLIO",
+          five: "by"
+        },
+        text:{
+          one: "Software Engineer and Product Designer, currently available for work.",
+          two: "Focused on interfaces and xp, working remotely from Sao Paulo - Brazil."
+        }
+        
+      }
     },
   },
 };

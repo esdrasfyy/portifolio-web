@@ -18,7 +18,6 @@ export default function RootLayout({
         <body
           className={`${inter.className} bg-primary text-primary duration-300 transition-all ease-linear`}
         >
-          <Menu />
           {children}
           <Header />
           <Cursor />

@@ -2,14 +2,16 @@
 import { ContextPreferences } from "@/app/contexts/ContextPreferences";
 import Link from "next/link";
 import { useContext } from "react";
-import { Sling as Hamburger } from "hamburger-react";
+
 import { i18n } from "../../translate/i18n";
+import { Menu } from "../menu/menu";
+
 const Header = () => {
   const contextPreferences = useContext(ContextPreferences!)!;
   const { theme, onOpen, menu, toggleTheme, toggleLang, lang } =
     contextPreferences;
   return (
-    <header className="fixed top-0 left-0 flex w-full justify-between items-center px-11 bg-secondary text-primary gap-14 max-sm:px-4 z-50 shadow-snipped">
+    <header className="fixed top-0 left-0 flex w-full justify-between items-center px-11 bg-secondary text-primary gap-14 max-sm:px-8 z-50 shadow-snipped">
       <Link href="/" className="flex items-center">
         {theme !== "light" ? (
           <span className="logo-white"></span>
@@ -61,9 +63,7 @@ const Header = () => {
           </button>
         </div>
       </nav>
-      <menu className="hidden max-sm:flex items-center" onClick={onOpen}>
-        <Hamburger size={25} toggled={menu} />
-      </menu>
+      <Menu />
     </header>
   );
 };

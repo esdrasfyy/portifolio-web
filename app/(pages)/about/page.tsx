@@ -18,36 +18,36 @@ function About() {
           </h2>
         </div>
         <div className="max-w-[700px] w-full flex justify-center items-center flex-col gap-8 max-sm:mt-20">
-          <div className="w-full flex items-center justify-between gap-12">
-            <div className="w-full max-xl:hidden max-sm:flex max-[500px]:hidden flex items-center justify-center">
-              <span className="w-14 h-14 rotate-45 border-[1px] border-[var(--color-text-primary)] opacity-50"></span>
+          <div className="w-full flex items-center justify-between gap-12 max-sm:gap-4">
+            <div className="w-full max-xl:hidden max-sm:flex flex items-center justify-center">
+              <span className="w-14 h-14 max-sm:w-8 max-sm:h-8 rotate-45 border-[1px] border-[var(--color-text-primary)] opacity-50"></span>
             </div>
-            <div className="w-full flex flex-col items-end border-[1px] border-[var(--color-text-primary)] rounded-md p-4">
-              <h3 className="text-xl font-semibold mb-4">FRONT-END SKILLS</h3>
+            <div className="w-full flex flex-col items-end  border-[1px] border-[var(--color-text-primary)] rounded-md  p-4 max-sm:min-w-[250px]">
+              <h3 className="text-xl font-semibold mb-4 max-sm:text-sm">FRONT-END SKILLS</h3>
               <p className="text-sm max-md:text-xs text-primary/30 uppercase w-full text-end">
                 React.Js, Next.Js, NextAuth, JavaScript (ES6+), TypeScript,
                 Redux, Redux Toolkit, Wordpress, HTML5, Git/GitHub.
               </p>
             </div>
           </div>
-          <div className="w-full flex items-center justify-center gap-12">
-            <div className="w-full flex flex-col border-[1px] border-[var(--color-text-primary)] rounded-md p-4">
-              <h3 className="text-xl font-semibold mb-4">FRONT-END SKILLS</h3>
+          <div className="w-full flex items-center justify-center gap-12 max-sm:gap-4">
+            <div className="w-full flex flex-col border-[1px] border-[var(--color-text-primary)] rounded-md  p-4 p-4 max-sm:min-w-[250px]">
+              <h3 className="text-xl font-semibold mb-4 max-sm:text-sm">FRONT-END SKILLS</h3>
               <p className="text-sm max-md:text-xs text-primary/30 uppercase w-full">
                 React.Js, Next.Js, NextAuth, JavaScript (ES6+), TypeScript,
                 Redux, Redux Toolkit, Wordpress, HTML5, Git/GitHub.
               </p>
             </div>
-            <div className="w-full max-xl:hidden max-sm:flex max-[500px]:hidden flex items-center justify-center">
-              <span className="w-14 h-14 rotate-45 border-[1px] border-[var(--color-text-primary)] opacity-50"></span>
+            <div className="w-full max-xl:hidden max-sm:flex flex items-center justify-center">
+              <span className="w-14 h-14 max-sm:w-8 max-sm:h-8 rotate-45 border-[1px] border-[var(--color-text-primary)] opacity-50"></span>
             </div>
-          </div>
-          <div className="w-full flex items-center justify-between gap-12">
-            <div className="w-full max-xl:hidden max-sm:flex max-[500px]:hidden flex items-center justify-center">
-              <span className="w-14 h-14 rotate-45 border-[1px] border-[var(--color-text-primary)] opacity-50"></span>
+          </div >
+          <div className="w-full flex items-center justify-between gap-12 max-sm:gap-4">
+            <div className="w-full max-xl:hidden max-sm:flex flex items-center justify-center">
+              <span className="w-14 h-14 max-sm:w-8 max-sm:h-8 rotate-45 border-[1px] border-[var(--color-text-primary)] opacity-50"></span>
             </div>
-            <div className="w-full flex flex-col items-end border-[1px] border-[var(--color-text-primary)] rounded-md p-4">
-              <h3 className="text-xl font-semibold mb-4">FRONT-END SKILLS</h3>
+            <div className="w-full flex flex-col items-end  border-[1px] border-[var(--color-text-primary)] rounded-md  p-4 p-4 max-sm:min-w-[250px]">
+              <h3 className="text-xl font-semibold mb-4 max-sm:text-sm">FRONT-END SKILLS</h3>
               <p className="text-sm max-md:text-xs text-primary/30 uppercase w-full text-end">
                 React.Js, Next.Js, NextAuth, JavaScript (ES6+), TypeScript,
                 Redux, Redux Toolkit, Wordpress, HTML5, Git/GitHub.
@@ -57,7 +57,6 @@ function About() {
         </div>
       </section>
       <div className="my-24 max-sm:my-12">
-
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="132"
@@ -72,8 +71,7 @@ function About() {
             />
           </g>
         </g>
-      </svg>
-              </div>
+      </svg></div>
       <section className="flex w-full justify-between mt-12 max-sm:flex-col ">
         <div className="flex relative justify-center items-center max-w-[515px] max-lg:max-w-[430px] max-md:max-w-[390px] max-sm:mx-auto max-sm:max-w-[490px]">
           <span className="absolute w-20 rounded-sm h-[115%] top-[-7%] left-12 bg-[white]  mix-blend-difference max-sm:left-1/2 max-sm:translate-x-[-50%] max-sm:w-10"></span>

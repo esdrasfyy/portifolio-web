@@ -633,9 +633,7 @@ export default function Home() {
                 {" "}
               </span>
             </div>
-            <p className="w-72 text-start">
-            {i18n.t("home.text.one")}
-            </p>
+            <p className="w-72 text-start">{i18n.t("home.text.one")}</p>
             <div className="items-center gap-4 hidden max-sm:flex">
               <span
                 className={`h-[1px] w-1/2 ${
@@ -649,9 +647,7 @@ export default function Home() {
               </button>
             </div>
             <div className="flex justify-end">
-              <p className="w-72 text-end">
-              {i18n.t("home.text.two")}
-              </p>
+              <p className="w-72 text-end">{i18n.t("home.text.two")}</p>
             </div>
             <div className="items-center gap-4 justify-end hidden max-sm:flex">
               <button className="text-2xl">

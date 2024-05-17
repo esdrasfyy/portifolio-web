@@ -1,5 +1,3 @@
-"use client";
-
 import { ProviderPreferences } from "../contexts/ContextPreferences";
 
 export function Providers({
@@ -11,7 +9,7 @@ export function Providers({
 }) {
   return (
     <ProviderPreferences initialTheme={initialTheme}>
-      {children}
+        {children}
     </ProviderPreferences>
   );
 }

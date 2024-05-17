@@ -1,4 +1,5 @@
 "use client";
+import { i18n } from "@/app/translate/i18n";
 import { Timeline } from "antd";
 import Image from "next/image";
 import React from "react";
@@ -9,16 +10,15 @@ function About() {
   return (
     <main className="flex overflow-y-hidden w-full min-h-screen flex-col items-center px-12  bg-blend-difference text-white pt-[10vh] max-md:px-4">
       <h1 className="text-7xl font-thin max-sm:text-6xl max-sm:mb-12 flex gap-8">
-        <span className="line">ABOUT</span>
-        <span className="line">ME</span>
+        <span className="line">{i18n.t("about.titles.one")}</span>
+        <span className="line">{i18n.t("about.titles.two")}</span>
       </h1>
       <section className="flex w-full justify-between mt-12 max-sm:flex-col ">
         <div className="flex relative justify-center items-center max-w-[515px] max-lg:max-w-[430px] max-md:max-w-[390px] max-sm:mx-auto max-sm:max-w-[490px]">
           <span className="absolute w-20 rounded-sm h-[115%] top-[-7%] left-12 bg-[white]  mix-blend-difference max-sm:left-1/2 max-sm:translate-x-[-50%] max-sm:w-10"></span>
           <h2 className="font-extrabold text-7xl text-primary w-full max-lg:text-6xl max-md:text-5xl max-sm:text-3xl max-sm:text-center">
             <span>
-              I MAKE BEAUTIFUL BRANDS, CAPTIVATING CONTENT, AND POWERFUL
-              WEBSITES.
+            {i18n.t("about.text.one")}
             </span>
           </h2>
         </div>
@@ -87,16 +87,13 @@ function About() {
       <section className="flex w-full  mt-12 items-center flex-col pb-24 max-sm:pb-28">
         <div className="flex border-[var(--color-text-primary)] border-[1px] p-4 rounded-md w-full max-w-[660px] max-sm:text-center max-sm:border-none relative">
           <div className="w-full">
-            <h3 className="text-xl font-semibold mb-4 max-sm:text-sm">
-              RESUME
+            <h3 className="text-xl font-semibold mb-4 max-sm:text-xl relative">
+              <span className="line">
+             {i18n.t("about.titles.three")}
+              </span>
             </h3>
             <p className="max-md:text-sm ">
-              Meu nome é Fernando, tenho 18 anos e sou estudante na área de UX/UI
-              Design. Comecei estudando Front-End, porém depois de um tempo, me
-              encontrei no design de interfaces. A parte da criação sempre me
-              chamou atenção, amo escolher cores, fontes, fazer wireframes e
-              idealizar o layout. Acredito que as duas áreas são muito
-              complementares.
+            {i18n.t("about.text.two")}
             </p>
           </div>
           <span className="absolute -right-12 -top-[60px]  border-[var(--color-text-primary)] border-[1px] min-w-[200px] h-[200px] z-10 opacity-50 max-sm:hidden"></span>
@@ -117,70 +114,56 @@ function About() {
             <span></span>
           </div>
         </div>
-        <div className="w-full flex justify-between items-center mt-28 max-sm:flex-col max-sm:gap-28">
+        <div className="w-full flex justify-between mt-28 max-sm:flex-col max-sm:gap-28">
           <div className="w-full max-sm:text-center">
-            <h4 className="text-xl ml-2 mb-5">SCHOLL</h4>
+            <h4 className="text-xl ml-2 mb-5 uppercase">{i18n.t("about.text.school")}</h4>
             <ul className="flex flex-col gap-4 max-sm:items-center">
               <li className="flex gap-3 items-center text-xs font-medium uppercase">
                 {" "}
                 <span>
                   <MdArrowRight className="text-lg opacity-25" />
                 </span>{" "}
-                <span>I'm Best Website Gallery - 12/12/2024</span>
+                <span>Escola da Nuvem - {i18n.t("about.text.three")} 16/06/2024</span>
               </li>
               <li className="flex gap-3 items-center text-xs font-medium uppercase">
                 {" "}
                 <span>
                   <MdArrowRight className="text-lg opacity-25" />
                 </span>{" "}
-                <span>I'm Best Website Gallery - 12/12/2024</span>
+                <span>Hackers do Bem -  {i18n.t("about.text.three")} 02/02/2024</span>
               </li>
               <li className="flex gap-3 items-center text-xs font-medium uppercase">
                 {" "}
                 <span>
                   <MdArrowRight className="text-lg opacity-25" />
                 </span>{" "}
-                <span>I'm Best Website Gallery - 12/12/2024</span>
+                <span>ADS Anhanguera -  {i18n.t("about.text.three")} 01/07/2024</span>
               </li>
               <li className="flex gap-3 items-center text-xs font-medium uppercase">
                 {" "}
                 <span>
                   <MdArrowRight className="text-lg opacity-25" />
                 </span>{" "}
-                <span>I'm Best Website Gallery - 12/12/2024</span>
+                <span> {i18n.t("about.text.english")}</span>
               </li>
             </ul>
           </div>
           <div className="w-full max-xl:hidden flex items-center justify-center">
             <span className="w-14 h-14 max-sm:w-8 max-sm:h-8 rotate-45 border-[1px] border-[var(--color-text-primary)] opacity-50"></span>
           </div>
-          <div className="w-full">
-            <h4 className="text-xl mr-2 mb-5 text-end max-sm:text-center">SCHOLL</h4>
+          <div className="w-full min-h-full">
+            <h4 className="text-xl mr-2 mb-5 text-end max-sm:text-center uppercase">{i18n.t("about.text.experiece")}</h4>
             <ul className="flex flex-col gap-4 justify-end items-end max-sm:items-center">
               <li className="flex gap-3 items-center text-xs font-medium uppercase max-sm:flex-row-reverse">
                 {" "}
-                <span>I'm Best Website Gallery - 12/12/2024</span>
+                <span>{i18n.t("about.text.studies")}  - {i18n.t("about.text.three")} 19/01/2023</span>
                 <span>
                   <MdArrowLeft className="text-lg opacity-25 max-sm:rotate-180" />
                 </span>{" "}
               </li>
               <li className="flex gap-3 items-center text-xs font-medium uppercase max-sm:flex-row-reverse">
                 {" "}
-                <span>I'm Best Website Gallery - 12/12/2024</span>
-                <span>
-                  <MdArrowLeft className="text-lg opacity-25 max-sm:rotate-180" />
-                </span>{" "}
-              </li>
-              <li className="flex gap-3 items-center text-xs font-medium uppercase max-sm:flex-row-reverse">
-                {" "}
-                <span>I'm Best Website Gallery - 12/12/2024</span>
-                <span>
-                  <MdArrowLeft className="text-lg opacity-25 max-sm:rotate-180" />
-                </span>{" "}
-              </li>
-              <li className="flex gap-3 items-center text-xs font-medium uppercase max-sm:flex-row-reverse">
-                {" "}
-                <span>I'm Best Website Gallery - 12/12/2024</span>
+                <span>FREELANCES - {i18n.t("about.text.three")}  20/06/2024</span>
                 <span>
                   <MdArrowLeft className="text-lg opacity-25 max-sm:rotate-180" />
                 </span>{" "}

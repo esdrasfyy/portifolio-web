@@ -68,7 +68,7 @@ function Creations() {
               <h3>
                 <span className="line font-semibold text-xl">FEATURES</span>
               </h3>
-              <ul className="grid grid-cols-1 md:grid-cols-2 mt-4 gap-4 list-disc text-sm">
+              <ul className="grid grid-cols-1 md:grid-cols-2 mt-4 gap-4 list-disc text-sm relative pb-10">
                 {lang !== "en-US" ? <FeaturesPtbr /> : <FeaturesEnus />}
               </ul>
             </div>

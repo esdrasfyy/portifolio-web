@@ -46,6 +46,8 @@ const messages = {
       creations: {
         titles: {
           one: "creations",
+          two: "See more.",
+          three:"See less.",
           have: "DO YOU HAVE A PROJECT IN MIND AND WOULD YOU LIKE TO INCLUDE MYSELF IN THE TEAM?",
         },
         projects: {

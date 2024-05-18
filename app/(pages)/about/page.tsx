@@ -100,7 +100,7 @@ function About() {
           <div className="w-fit object-fill translate-x-20 -translate-y-14 max-sm:hidden">
             <Image
               alt=""
-              src="/my.webp"
+              src="/model.jpeg"
               quality={100}
               priority
               width={100}

@@ -20,7 +20,7 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="blog-slider w-full max-w-[800px] relative border-[1px] border-[var(--color-text-primary)] p-7 rounded-md h-[400px] transition-all duration-300">
+    <div className="blog-slider w-full max-w-[800px] relative border-[1px] border-[var(--color-text-primary)] p-7 rounded-md h-[400px] transition-all duration-300 flex justify-between h-full">
       <div className="blog-slider__wrp swiper-wrapper">
         <Slide />
         <Slide />

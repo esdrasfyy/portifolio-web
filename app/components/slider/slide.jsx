@@ -10,22 +10,21 @@ import { SiNextdotjs } from "react-icons/si";
 function Slide() {
   return (
     <div className="blog-slider__item flex items-center swiper-slide">
-      <div className="blog-slider__img min-w-[420px] max-w-[420px] h-[280px] grayscale hover:grayscale-0 duration-300 ease-linear border-[1px] border-[var(--color-text-primary)] rounded-md bg-secondary -translate-x-20 shrink overflow-hidden">
+      <div className="blog-slider__img min-w-[420px] max-w-[420px] h-[280px] max-sm:min-w-[300px] max-sm:h-[200px] grayscale hover:grayscale-0 duration-300 ease-linear border-[1px] border-[var(--color-text-primary)] rounded-md bg-secondary -translate-x-20 shrink overflow-hidden">
         <Image src="/image.png" alt="" fill quality={100} priority />
         <div className="flex flex-col gap-4 absolute top-3 left-3 text-xl">
-
-        <span>
-          <BiLogoTypescript />
-        </span>
-        <span>
-          <FaReact />
-        </span>
-        <span>
-          <RiTailwindCssFill />
-        </span>
-        <span>
-          <SiNextdotjs />
-        </span>
+          <span>
+            <BiLogoTypescript />
+          </span>
+          <span>
+            <FaReact />
+          </span>
+          <span>
+            <RiTailwindCssFill />
+          </span>
+          <span>
+            <SiNextdotjs />
+          </span>
         </div>
       </div>
       <div className="blog-slider__content">
@@ -33,7 +32,10 @@ function Slide() {
         <div className="blog-slider__title">Lorem Ipsum Dolor</div>
         <div className="blog-slider__text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
-          voluptate repellendus magni illo ea animi?
+          voluptate repellendus magni illo ea animi?Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Recusandae voluptate repellendus magni
+          illo ea animi? voluptate repellendus magni illo ea animi? voluptate
+          animi?
         </div>
         <ButtonDefault Icon={MdLocalSee} content="Read More" iconStyles="" />
       </div>

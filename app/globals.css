@@ -358,6 +358,7 @@
     top: 205px;
     width: 100% !important;
     display: flex;
+    gap: 5px;
     justify-content: center;
     align-items: center;
   }

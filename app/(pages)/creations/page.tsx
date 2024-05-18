@@ -1,4 +1,4 @@
-import {Slider} from "@/app/components/slider/slider";
+import { Slider } from "@/app/components/slider/slider";
 import { i18n } from "@/app/translate/i18n";
 import React from "react";
 
@@ -16,9 +16,17 @@ function Creations() {
         </aside>
       </section>
       <section className="max-w-[900px] w-full h-96 body">
-        <Slider/>
+        <h2>LANDING PAGES</h2>
+        <Slider />
       </section>
-      <section></section>
+      <section className="max-w-[900px] w-full h-96 body">
+        <h2>LANDING PAGES</h2>
+        <Slider />
+      </section>
+      <section className="max-w-[900px] w-full h-96 body">
+        <h2>LANDING PAGES</h2>
+        <Slider />
+      </section>
     </main>
   );
 }

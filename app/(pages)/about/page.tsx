@@ -1,4 +1,3 @@
-"use client";
 import { i18n } from "@/app/translate/i18n";
 import { Timeline } from "antd";
 import Image from "next/image";
@@ -98,20 +97,16 @@ function About() {
           </div>
           <span className="absolute -right-12 -top-[60px]  border-[var(--color-text-primary)] border-[1px] min-w-[200px] h-[200px] z-10 opacity-50 max-sm:hidden"></span>
           <span className="absolute -right-16 -top-10  border-[var(--color-text-primary)] border-[1px] min-w-[200px] h-[200px] z-10 opacity-50 max-sm:hidden"></span>
-          <div className="w-fit object-cover translate-x-20 -translate-y-14 max-sm:hidden">
+          <div className="w-fit object-fill translate-x-20 -translate-y-14 max-sm:hidden">
             <Image
               alt=""
-              src="/model.jpeg"
+              src="/my.webp"
               quality={100}
               priority
               width={100}
               height={100}
               className="min-w-[200px] h-[200px]"
             />
-          </div>
-          <div>
-            <Image alt="" src={""} />
-            <span></span>
           </div>
         </div>
         <div className="w-full flex justify-between mt-28 max-sm:flex-col max-sm:gap-28">

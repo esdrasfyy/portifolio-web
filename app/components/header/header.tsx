@@ -33,7 +33,7 @@ const Header = () => {
           <span className="animation-transform">{i18n.t("header.about")}</span>
         </Link>
         <Link
-          href="#"
+          href="/creations"
           className="font-semibold duration-300 ease-linear animated"
         >
           <span className="animation-transform">

@@ -21,7 +21,7 @@ export default function RootLayout({
           />
         </head>
         <body
-          className={`${inter.className} bg-primary text-primary duration-300 transition-all ease-linear`}
+          className={`${inter.className} bg-primary text-primary duration-300 transition-all ease-linear scroll-styled`}
         >
           {children}
           <Header />

@@ -33,6 +33,27 @@
   cursor: none;
 }
 
+.scroll-styled::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scroll-styled::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+  border-radius: 1px;
+}
+
+.scroll-styled::-webkit-scrollbar-thumb {
+  background: var(--color-text-primary);
+  border-radius: 1px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .scroll-styled {
+      scrollbar-color: var(--color-text-primary)
+                     var(--color-bg-primary);
+  }
+}
+
 .cursor {
   position: fixed;
   pointer-events: none;

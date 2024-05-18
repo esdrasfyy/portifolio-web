@@ -1,19 +1,29 @@
-import { Slider } from "@/app/components/slider/slider";
+"use client";
+import { Slider } from "@/app/components/slider/learn/slider";
+import { ContextPreferences } from "@/app/contexts/ContextPreferences";
+import {
+  DetailsEnus,
+  DetailsPtbr,
+  FeaturesEnus,
+  FeaturesPtbr,
+} from "@/app/translate/constants/constants";
 import { i18n } from "@/app/translate/i18n";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useContext } from "react";
 import { FiExternalLink } from "react-icons/fi";
 import { GoArrowUp } from "react-icons/go";
 import { IoIosMail } from "react-icons/io";
 
 function Creations() {
+  const context = useContext(ContextPreferences!)!;
+  const { lang } = context;
   return (
     <main className="min-h-screen w-full flex flex-col justify-start items-center px-12 pt-[10vh] max-sm:px-4 overflow-x-hidden">
-      <h1 className="text-7xl font-thin max-sm:text-6xl flex gap-8">
-        <span className="line">{i18n.t("contact.titles.one")}</span>
+      <h1 className="text-7xl font-thin max-sm:text-6xl flex gap-8 uppercase">
+        <span className="line">{i18n.t("creations.titles.one")}</span>
       </h1>
-      <section className="flex w-full h-fit max-w-[900px] max-md:h-auto justify-between items-center mt-32 gap-2 mr-24 max-md:mr-0">
+      <section className="flex w-full h-fit max-w-[900px] max-md:h-auto justify-between items-center mt-16 gap-2 mr-24 max-md:mr-0">
         <aside className="flex min-h-[400px] justify-between flex-col font-black text-9xl opacity-5 max-md:hidden">
           <span>4</span>
           <span>0</span>
@@ -35,40 +45,39 @@ function Creations() {
           <div className="flex flex-col gap-2 p-2 border-[1px] border-[#333] border-t-0 -mt-0.5 rounded-smd">
             <div className="flex w-full gap-2 max-lg:flex-col">
               <div className="flex flex-col gap-2">
-                <div className="relative w-96 max-lg:w-full max-lg:h-[25vh] h-56 border-[1px] border-[#333] rounded-md">
-                  <Image alt="" src="/image.png" fill />
+                <div className="relative w-96 max-lg:w-full max-lg:h-[25vh] h-56 border-[1px] border-[#333] rounded-md grayscale hover:grayscale-0 duration-300 ease-linear">
+                  <Image
+                    alt=""
+                    src={i18n.t("creations.projects.ecommerce.gif")}
+                    fill
+                  />
                 </div>
               </div>
-              <div className="w-full min-h-full border-[1px] border-[#333] rounded-md p-2">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Recusandae voluptate repellendus magni illo ea animi?Lorem ipsum
-                dolor sit amet consectetur, adipisicing elit. Recusandae
-                voluptate repellendus magni illo ea animi? voluptate repellendus
-                magni illo ea animi? voluptate animi?
+              <div className="w-full overflow-y-scroll scroll-styled max-h-[230px] min-h-full border-[1px] border-[#333] rounded-md p-2">
+                <h3 className="mb-4">
+                  <span className="line font-semibold text-xl uppercase">
+                    {i18n.t("creations.projects.ecommerce.titles.details")}
+                  </span>
+                </h3>
+                <p className="text-sm leading-6">
+                  {lang !== "en-US" ? <DetailsPtbr /> : <DetailsEnus />}
+                </p>
               </div>
             </div>
             <div className="w-full h-full border-[1px] border-[#333] rounded-md p-2">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Recusandae voluptate repellendus magni illo ea animi?Lorem ipsum
-              dolor sit amet consectetur, adipisicing elit. Recusandae voluptate
-              repellendus magni illo ea animi? voluptate repellendus magni illo
-              ea animi? voluptate animi? Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Recusandae voluptate repellendus magni illo ea
-              animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Recusandae voluptate repellendus magni illo ea animi? voluptate
-              repellendus magni illo ea animi? voluptate animi?Lorem ipsum dolor
-              sit amet consectetur, adipisicing elit. Recusandae voluptate
-              repellendus magni illo ea animi?Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Recusandae voluptate repellendus
-              magni illo ea animi? voluptate repellendus magni illo ea animi?
-              voluptate animi?
+              <h3>
+                <span className="line font-semibold text-xl">FEATURES</span>
+              </h3>
+              <ul className="grid grid-cols-1 md:grid-cols-2 mt-4 gap-4 list-disc text-sm">
+                {lang !== "en-US" ? <FeaturesPtbr /> : <FeaturesEnus />}
+              </ul>
             </div>
           </div>
         </div>
       </section>
       <section className="max-w-[900px] w-full mt-12 flex justify-center items-center gap-2">
         <div className="w-full text-left mb-8">
-          <div>
+          <div className="pb-8">
             <h2 className="text-4xl font-extralight">LANDING PAGES</h2>
           </div>
           <Slider />
@@ -80,8 +89,8 @@ function Creations() {
         </aside>
       </section>
       <section className="max-w-[900px] w-full mt-12 flex justify-center items-center gap-2">
-        <div className="w-full text-left mb-8">
-          <div>
+        <div className="w-full text-left">
+          <div className="pb-8">
             <h2 className="text-4xl font-extralight">JUST TO LEARN</h2>
           </div>
           <Slider />
@@ -92,14 +101,14 @@ function Creations() {
           <span>0</span>
         </aside>
       </section>
-      <div className="my-24 max-sm:my-12">
+      <div className="my-24 max-sm:mb-12 max-sm:mt-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="132"
           height="15"
           viewBox="0 0 132 15"
         >
-          <g id="Page-1" fill="none" fill-rule="evenodd">
+          <g id="Page-1" fill="none" fillRule="evenodd">
             <g id="Artboard-2" fill="var(--color-text-primary)" opacity={0.5}>
               <path
                 id="Combined-Shape"
@@ -109,14 +118,15 @@ function Creations() {
           </g>
         </svg>
       </div>
-      <section className="w-full flex justify-between max-sm:justify-center items-center max-w-[900px] max-sm:flex-col">
+      <section className="w-full flex justify-between max-sm:justify-center items-center max-w-[900px] max-sm:flex-col pb-20">
         <div className="text-3xl uppercase max-sm:w-full">
-          <h3 className="max-w-72">
-            TEM ALGUM PROJETO EM MENTE E GOSTARIA DE ME INCLUIR NESSA EQUIPE?
-          </h3>
+          <h3 className="max-w-72">{i18n.t("creations.titles.have")}</h3>
         </div>
-        <div className="h-[180px]  max-sm:w-full max-sm:mt-12">
-          <Link href="/contact" className="max-sm:hidden h-full rotate-0 relative grid overflow-hidden rounded-md px-6 py-2 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200 max-md:cursor-pointer group">
+        <div className="h-[180px] max-sm:h-fit  max-sm:w-full max-sm:mt-12">
+          <Link
+            href="/contact"
+            className="max-sm:hidden h-full rotate-0 relative grid overflow-hidden rounded-md px-6 py-2 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200 max-md:cursor-pointer group"
+          >
             <span>
               <span className="spark mask-gradient animate-flip before:animate-rotate absolute inset-0 h-[100%] w-[100%] overflow-hidden rounded-md [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[950%] before:rotate-[-65deg] before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
             </span>
@@ -130,7 +140,10 @@ function Creations() {
               </span>
             </span>
           </Link>
-          <Link href="/contact" className="w-full group relative hidden max-sm:grid overflow-hidden rounded-sm px-4 py-4 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200 group">
+          <Link
+            href="/contact"
+            className="w-full group relative hidden max-sm:grid overflow-hidden rounded-sm px-4 py-4 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200 group"
+          >
             <span>
               <span className="spark mask-gradient animate-flip before:animate-rotate absolute inset-0 h-[100%] w-[100%] overflow-hidden rounded-sm [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
             </span>

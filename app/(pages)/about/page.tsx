@@ -73,7 +73,7 @@ function About() {
           height="15"
           viewBox="0 0 132 15"
         >
-          <g id="Page-1" fill="none" fill-rule="evenodd">
+          <g id="Page-1" fill="none" fillRule="evenodd">
             <g id="Artboard-2" fill="var(--color-text-primary)" opacity={0.5}>
               <path
                 id="Combined-Shape"

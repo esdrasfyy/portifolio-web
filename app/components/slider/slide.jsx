@@ -27,7 +27,7 @@ function Slide() {
           </span>
         </div>
       </div>
-      <div className="blog-slider__content">
+      <div className="blog-slider__content max-sm:mt-[-20px]">
         <span className="blog-slider__code opacity-5">26 December 2019</span>
         <div className="blog-slider__title">Lorem Ipsum Dolor</div>
         <div className="blog-slider__text">

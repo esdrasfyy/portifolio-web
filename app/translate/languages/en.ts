@@ -38,6 +38,11 @@ const messages = {
           three: "RESUME"
         },
       },
+      contact:{
+        titles:{
+          one: "CONTACT"
+        }
+      }
     },
   },
 };

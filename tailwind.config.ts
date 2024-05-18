@@ -18,6 +18,22 @@ const config: Config = {
         primary: "var(--color-bg-primary)",
         secondary: "var(--color-bg-secondary)",
       },
+      animation: {
+        flip: "flip 6s infinite steps(2, end)",
+        rotate: "rotate 3s linear infinite both",
+      },
+      keyframes: {
+        flip: {
+          to: {
+            transform: "rotate(360deg)",
+          },
+        },
+        rotate: {
+          to: {
+            transform: "rotate(90deg)",
+          },
+        },
+      },
       textColor: {
         primary: "var(--color-text-primary)",
         secondary: "var(--color-text-secondary)",
@@ -34,4 +50,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;

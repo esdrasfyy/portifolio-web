@@ -41,7 +41,7 @@ const Header = () => {
           </span>
         </Link>
         <Link
-          href="#"
+          href="/contact"
           className="font-semibold duration-300 ease-linear animated"
         >
           <span className="animation-transform">

@@ -15,16 +15,18 @@ function Creations() {
           <span>4</span>
         </aside>
       </section>
-      <section className="max-w-[900px] w-full h-96 body">
+      <section className="max-w-[900px] w-full mt-12 flex justify-center items-center flex-col">
+        <div className="w-full text-left mb-8">
+        <h2 className="text-4xl font-extralight">LANDING PAGES</h2>
+        </div>
+        <Slider />
+      </section>
+      <section className="max-w-[900px] w-full mt-12">
         <h2>LANDING PAGES</h2>
         <Slider />
       </section>
-      <section className="max-w-[900px] w-full h-96 body">
-        <h2>LANDING PAGES</h2>
-        <Slider />
-      </section>
-      <section className="max-w-[900px] w-full h-96 body">
-        <h2>LANDING PAGES</h2>
+      <section className="max-w-[900px] w-full mt-12">
+        <h2 >LANDING PAGES</h2>
         <Slider />
       </section>
     </main>

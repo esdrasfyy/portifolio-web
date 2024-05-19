@@ -23,7 +23,7 @@ function Menu() {
     setLoading(true);
     setTimeout(() => {
       router.push(route);
-    }, 500);
+    }, 800);
     onClose();
   }
   return (

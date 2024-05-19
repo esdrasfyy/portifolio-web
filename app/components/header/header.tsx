@@ -16,18 +16,19 @@ const Header = () => {
     setLoading(true);
     setTimeout(() => {
       router.push(route);
-    }, 500);
+    }, 800);
 
   }
   return (
     <header className="fixed top-0 left-0 flex w-full justify-between items-center px-11 bg-secondary text-primary gap-14 max-sm:px-8 z-[60] shadow-snipped">
-      <Link href="/" className="flex items-center">
+      <button
+          onClick={() => handleButtonClick("/")} className="flex items-center">
         {theme !== "light" ? (
           <span className="logo-white"></span>
         ) : (
           <span className="logo-black"></span>
         )}
-      </Link>
+      </button>
       <nav className="flex w-1/2 max-lg:w-full justify-between max-sm:hidden">
         <button
           onClick={() => handleButtonClick("/")}

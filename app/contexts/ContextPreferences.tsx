@@ -38,7 +38,7 @@ const ProviderPreferences: React.FC<{
   const [theme, setTheme] = useState<string>(getInitialTheme);
   const [lang, setLang] = useState<string>(getInitialLang());
   const [menu, setMenu] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const onClose = () => {
     setMenu(false);
   };

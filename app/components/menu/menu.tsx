@@ -24,6 +24,7 @@ function Menu() {
     setTimeout(() => {
       router.push(route);
     }, 1000);
+    onClose();
   }
   return (
     <>

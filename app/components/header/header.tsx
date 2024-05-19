@@ -16,8 +16,8 @@ const Header = () => {
     setLoading(true);
     setTimeout(() => {
       router.push(route);
-    }, 1000);
-    
+    }, 500);
+
   }
   return (
     <header className="fixed top-0 left-0 flex w-full justify-between items-center px-11 bg-secondary text-primary gap-14 max-sm:px-8 z-[60] shadow-snipped">

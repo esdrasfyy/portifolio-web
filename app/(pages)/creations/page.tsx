@@ -53,9 +53,9 @@ function Creations() {
                   />
                 </div>
               </div>
-              <div className="w-full overflow-y-scroll scroll-styled max-h-[230px] min-h-full border-[1px] border-[#333] rounded-md p-2">
-                <h3 className="mb-4">
-                  <span className="line font-semibold text-xl uppercase">
+              <div className="w-full overflow-y-scroll scroll-styled max-h-[230px] min-h-full border-[1px] border-[#333] rounded-md p-2 relative pb-10">
+                <h3 className="">
+                  <span className="line font-semibold text-base uppercase">
                     {i18n.t("creations.projects.ecommerce.titles.details")}
                   </span>
                 </h3>
@@ -66,7 +66,7 @@ function Creations() {
             </div>
             <div className="w-full h-full border-[1px] border-[#333] rounded-md p-2">
               <h3>
-                <span className="line font-semibold text-xl">FEATURES</span>
+                <span className="line font-semibold text-base">FEATURES</span>
               </h3>
               <ul className="grid grid-cols-1 md:grid-cols-2 mt-4 gap-4 list-disc text-sm relative pb-10">
                 {lang !== "en-US" ? <FeaturesPtbr /> : <FeaturesEnus />}

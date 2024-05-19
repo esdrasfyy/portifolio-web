@@ -1,7 +1,6 @@
 "use client";
 import { ReactNode, createContext, useEffect, useState } from "react";
 import { ContextPreferencesT } from "./types/ContextProviderT";
-import { useRouter } from "next/router";
 
 const getInitialTheme = () => {
   if (typeof window !== "undefined" && window.localStorage) {
@@ -25,7 +24,7 @@ const getInitialLang = () => {
     }
     return navigator.language;
   }
-  return "pt-BR"
+  return "pt-BR";
 };
 
 const ContextPreferences = createContext<ContextPreferencesT | undefined>(
@@ -39,6 +38,7 @@ const ProviderPreferences: React.FC<{
   const [theme, setTheme] = useState<string>(getInitialTheme);
   const [lang, setLang] = useState<string>(getInitialLang());
   const [menu, setMenu] = useState(false);
+  const [loading, setLoading] = useState(true);
   const onClose = () => {
     setMenu(false);
   };
@@ -88,6 +88,8 @@ const ProviderPreferences: React.FC<{
     onClose,
     onOpen,
     menu,
+    loading,
+    setLoading,
   };
 
   return (

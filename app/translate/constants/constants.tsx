@@ -6,11 +6,11 @@ function DetailsPtbr() {
     <>
       Criei esta plataforma de e-commerce para me aprofundar no aprendizado de
       várias tecnologias, incluindo
-      <strong>Next.js</strong>, <strong>Node.js</strong>,{" "}
+      <strong> Next.js</strong>, <strong>Node.js</strong>,{" "}
       <strong>TypeScript</strong>, <strong>SQL</strong>,
-      <strong>gateways de pagamento</strong>, <strong>OAuth</strong>, web
+      <strong> gateways de pagamento</strong>, <strong>OAuth</strong>, web
       scraping, reconhecimento de voz, webhooks,
-      <strong>Socket.IO</strong>, envio de email e SMS, e WhatsApp web.{" "}
+      <strong> Socket.IO</strong>, envio de email e SMS, e WhatsApp web.{" "}
       {hide && (
         <>
           A maioria dessas tecnologias era
@@ -30,12 +30,24 @@ function DetailsPtbr() {
           <strong>carteira virtual</strong> e mais.
         </>
       )}
-      <button
-        onClick={() => setHide(!hide)}
-        className="font-semibold underline ml-3"
+      <span
+        className={`max-w-28 w-full flex justify-center mx-auto pt-2  ${
+          !hide && "absolute bottom-3 left-1/2 -translate-x-1/2"
+        }`}
       >
-        {!hide ? "Ver mais." : "Ver menos."}
-      </button>
+        <button
+          className="w-full group relative grid overflow-hidden text-xs uppercase rounded-sm px-4 py-1 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200 group"
+          onClick={() => setHide(!hide)}
+        >
+          <span>
+            <span className="spark mask-gradient animate-flip before:animate-rotate absolute inset-0 h-[100%] w-[100%] overflow-hidden rounded-sm [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
+          </span>
+          <span className="backdrop absolute inset-px rounded-sm transition-colors bg-primary  group-hover:bg-neutral-900  max-md:cursor-pointer group-hover:bg-secondary duration-300 ease-linear" />
+          <span className="z-10 text-center text-neutral-400 font-medium max-md:cursor-pointer flex gap-3 items-center justify-center">
+            {!hide ? "Ver mais" : "Ver menos"}
+          </span>
+        </button>
+      </span>
     </>
   );
 }
@@ -106,14 +118,20 @@ function FeaturesPtbr() {
           </li>
         </>
       )}
-      <li className="absolute left-1/2 bottom-0 -translate-x-1/2 pb-3">
+      <span className="max-w-28 w-full flex justify-center mx-auto pt-2 absolute bottom-1 left-1/2 -translate-x-1/2">
         <button
+          className="w-full group relative grid overflow-hidden text-xs uppercase rounded-sm px-4 py-1 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200 group"
           onClick={() => setHide(!hide)}
-          className="font-semibold underline"
         >
-          {!hide ? "Ver mais." : "Ver menos."}
+          <span>
+            <span className="spark mask-gradient animate-flip before:animate-rotate absolute inset-0 h-[100%] w-[100%] overflow-hidden rounded-sm [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
+          </span>
+          <span className="backdrop absolute inset-px rounded-sm transition-colors bg-primary  group-hover:bg-neutral-900  max-md:cursor-pointer group-hover:bg-secondary duration-300 ease-linear" />
+          <span className="z-10 text-center text-neutral-400 font-medium max-md:cursor-pointer flex gap-3 items-center justify-center">
+            {!hide ? "Ver mais" : "Ver menos"}
+          </span>
         </button>
-      </li>
+      </span>
     </>
   );
 }
@@ -144,12 +162,24 @@ function DetailsEnus() {
           <strong>virtual wallet</strong>, and more.
         </>
       )}
-      <button
-        onClick={() => setHide(!hide)}
-        className="font-semibold underline ml-3"
+      <span
+        className={`max-w-28 w-full flex justify-center mx-auto pt-2  ${
+          !hide && "absolute bottom-3 left-1/2 -translate-x-1/2"
+        }`}
       >
-        {!hide ? "See more." : "See less."}
-      </button>
+        <button
+          className="w-full group relative grid overflow-hidden text-xs uppercase rounded-sm px-4 py-1 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200 group"
+          onClick={() => setHide(!hide)}
+        >
+          <span>
+            <span className="spark mask-gradient animate-flip before:animate-rotate absolute inset-0 h-[100%] w-[100%] overflow-hidden rounded-sm [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
+          </span>
+          <span className="backdrop absolute inset-px rounded-sm transition-colors bg-primary  group-hover:bg-neutral-900  max-md:cursor-pointer group-hover:bg-secondary duration-300 ease-linear" />
+          <span className="z-10 text-center text-neutral-400 font-medium max-md:cursor-pointer flex gap-3 items-center justify-center">
+            {!hide ? "See more" : "See less"}
+          </span>
+        </button>
+      </span>
     </>
   );
 }
@@ -218,14 +248,20 @@ function FeaturesEnus() {
           </li>
         </>
       )}
-      <li className="absolute left-1/2 bottom-0 -translate-x-1/2 pb-3">
+      <span className="max-w-28 w-full flex justify-center mx-auto pt-2 absolute bottom-1 left-1/2 -translate-x-1/2">
         <button
+          className="w-full group relative grid overflow-hidden text-xs uppercase rounded-sm px-4 py-1 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200 group"
           onClick={() => setHide(!hide)}
-          className="font-semibold underline"
         >
-          {!hide ? "Ver mais." : "Ver menos."}
+          <span>
+            <span className="spark mask-gradient animate-flip before:animate-rotate absolute inset-0 h-[100%] w-[100%] overflow-hidden rounded-sm [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
+          </span>
+          <span className="backdrop absolute inset-px rounded-sm transition-colors bg-primary  group-hover:bg-neutral-900  max-md:cursor-pointer group-hover:bg-secondary duration-300 ease-linear" />
+          <span className="z-10 text-center text-neutral-400 font-medium max-md:cursor-pointer flex gap-3 items-center justify-center">
+            {!hide ? "See more" : "See less"}
+          </span>
         </button>
-      </li>
+      </span>
     </>
   );
 }

@@ -3,6 +3,7 @@ import "./globals.css";
 import { Header } from "./components/header/header";
 import { Cursor } from "./utils/cursor/cursor";
 import { ProviderPreferences } from "./contexts/ContextPreferences";
+import { TransitionPage } from "./components/transition-page/transition-page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,8 +22,9 @@ export default function RootLayout({
           />
         </head>
         <body
-          className={`${inter.className} bg-primary text-primary duration-300 transition-all ease-linear scroll-styled`}
-        >
+          className={`${inter.className} overflow-x-hidden bg-primary text-primary duration-300 transition-all ease-linear scroll-styled`}
+          >
+          <TransitionPage/>
           {children}
           <Header />
           <Cursor />

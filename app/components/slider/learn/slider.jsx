@@ -51,7 +51,7 @@ const Slider = () => {
       url: i18n.t("creations.projects.hotel.url"),
     },
     {
-      gif: "/advocacia.png",
+      gif: "/advocacia.mp4",
       title: i18n.t("creations.projects.advocacia.title"),
       date: i18n.t("creations.projects.advocacia.date"),
       description: i18n.t("creations.projects.advocacia.description"),

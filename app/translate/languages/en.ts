@@ -91,7 +91,7 @@ const messages = {
             url: "www.serenehavenresort.com",
           },
           advocacia: {
-            gif: "/advocacia.png",
+            gif: "/advocacia.mp4",
             title: "Justice Partners Legal Group",
             date: "Established in 1995",
             description:

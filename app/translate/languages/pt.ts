@@ -91,7 +91,7 @@ const messages = {
             url: "www.hotelparaisosereno.com.br",
           },
           advocacia: {
-            gif: "/advocacia.png",
+            gif: "/advocacia.mp4",
             title: "Advocacia Justiça e Equidade",
             date: "Estabelecida em 1995",
             description:

@@ -1,5 +1,6 @@
 "use client";
-import { Slider } from "@/app/components/slider/learn/slider";
+import { SliderLandingPages } from "@/app/components/slider/landing/slider";
+import { SliderLerns } from "@/app/components/slider/learn/slider";
 import { ContextPreferences } from "@/app/contexts/ContextPreferences";
 import {
   DetailsEnus,
@@ -80,7 +81,7 @@ function Creations() {
           <div className="pb-8">
             <h2 className="text-4xl font-extralight">LANDING PAGES</h2>
           </div>
-          <Slider />
+          <SliderLandingPages />
         </div>
         <aside className="flex min-h-[400px] justify-between flex-col font-black text-9xl opacity-5 max-lg:hidden">
           <span>5</span>
@@ -93,7 +94,7 @@ function Creations() {
           <div className="pb-8">
             <h2 className="text-4xl font-extralight">JUST TO LEARN</h2>
           </div>
-          <Slider />
+          <SliderLerns />
         </div>
         <aside className="flex min-h-[400px] justify-between flex-col font-black text-9xl opacity-5 max-lg:hidden">
           <span>2</span>

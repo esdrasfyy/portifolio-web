@@ -47,8 +47,9 @@ const messages = {
         titles: {
           one: "projetos",
           two: "Ver mais.",
-          three:"Ver menos.",
-          have:"TEM ALGUM PROJETO EM MENTE E GOSTARIA DE ME INCLUIR NESSA EQUIPE?"
+          three: "Ver menos.",
+          have: "TEM ALGUM PROJETO EM MENTE E GOSTARIA DE ME INCLUIR NESSA EQUIPE?",
+          see_deploy: "VER DEPLOY"
         },
         projects: {
           ecommerce: {
@@ -58,53 +59,29 @@ const messages = {
               features: "features",
             },
           },
-          restaurante: {
-            gif: "/restaurante.png",
-            title: "Saboroso Bistrô",
-            date: "Fundado em 2010",
-            description:
-              "O Saboroso Bistrô oferece uma fusão de sabores internacionais com foco em ingredientes locais. De suculentos bifes a delicados sushis, nosso cardápio atende a diversos paladares. Desfrute de um ambiente acolhedor e serviço impecável para uma experiência gastronômica memorável.",
-            url: "www.saborosobistro.com.br",
-          },
-          academia: {
-            gif: "/academia.png",
-            title: "Academia Forma Ideal",
-            date: "Fundada em 2005",
-            description:
-              "Na Academia Forma Ideal, estamos dedicados a ajudá-lo a alcançar seus objetivos fitness. Nossas instalações de última geração incluem equipamentos de ponta, programas de treinamento personalizados e uma variedade de aulas para todos os níveis de condicionamento físico. Junte-se à nossa comunidade e embarque em uma jornada para um estilo de vida mais saudável.",
-            url: "www.academiaformaidel.com.br",
-          },
           cabeleleiro: {
             gif: "/cabeleleiro.png",
-            title: "Salão Beleza Total",
-            date: "Atendendo desde 1998",
+            title: "Studio 77",
+            date: "Atendendo desde 2020",
             description:
-              "Entre no luxo no Salão Beleza Total, onde cabeleireiros e esteticistas especializados cuidam de você da cabeça aos pés. Esteja procurando por um novo corte de cabelo ousado, uma facial rejuvenescedora ou uma massagem relaxante, nossa equipe está dedicada a fazer você se sentir e parecer o seu melhor.",
-            url: "www.salaobelezatotal.com.br",
+              "Cada corte é uma obra de arte, proporcionando estilo e confiança. Aqui, cada detalhe é pensado para destacar sua personalidade e elevar sua autoestima. Venha transformar o seu visual, relaxar e viver uma experiência única. ",
+            url: "https://ldp-barber.vercel.app/",
           },
           hotel: {
             gif: "/hotel.png",
-            title: "Hotel Paraíso Sereno",
+            title: "Oasis Radiant",
             date: "Recebendo hóspedes desde 2003",
             description:
-              "Localizado em meio a paisagens naturais deslumbrantes, o Hotel Paraíso Sereno oferece um refúgio tranquilo para o viajante exigente. Desfrute de acomodações luxuosas, gastronomia requintada e tratamentos de spa rejuvenescedores, tudo isso cercado por uma beleza e serenidade incomparáveis.",
-            url: "www.hotelparaisosereno.com.br",
+              "No Oasis Radiant, acreditamos que a hospitalidade vai além de hospedar. Nossa missão é criar um ambiente acolhedor e sofisticado, onde nossos hóspedes se sintam em casa. Nossa equipe dedicada está pronta para atender todas as suas necessidades com cordialidade.",
+            url: "https://ldp-hotel.vercel.app/",
           },
           advocacia: {
-            gif: "/advocacia.mp4",
-            title: "Advocacia Justiça e Equidade",
-            date: "Estabelecida em 1995",
+            gif: "/advocacia.png",
+            title: "Elysium Advocacia",
+            date: "Estabelecida em 1998",
             description:
-              "Na Advocacia Justiça e Equidade, estamos comprometidos em fornecer consultoria jurídica e representação especializada com integridade e compaixão. Nossa equipe de advogados experientes se especializa em diversas áreas do direito, garantindo que suas necessidades legais sejam atendidas com profissionalismo e dedicação.",
-            url: "www.advocaciajusticaequidade.com.br",
-          },
-          petshop: {
-            gif: "/petshop.png",
-            title: "Pet Shop Patas Felizes",
-            date: "Atendendo amigos peludos desde 2007",
-            description:
-              "O Pet Shop Patas Felizes é a sua loja completa para todas as necessidades do seu animal de estimação. De alimentos premium e brinquedos a serviços de banho e tosa e conselhos especializados, estamos apaixonados por oferecer cuidados excepcionais para seus companheiros amados.",
-            url: "www.petshoppatasfelizes.com.br",
+              "A Elysium Advocacia foi fundada em 1998, com sua trajetória construída em bases sólidas, a partir da relação de confiança com seus clientes. A atuação do escritório ocorre em todo o território nacional, representando pessoas físicas e jurídicas sempre pautado pela ética profissional. ",
+            url: "https://ldp-advocacia.vercel.app/",
           },
         },
       },

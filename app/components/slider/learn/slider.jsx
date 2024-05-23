@@ -3,7 +3,8 @@ import React, { useEffect } from "react";
 import Swiper from "swiper";
 import { Slide } from "./slide";
 import { i18n } from "@/app/translate/i18n";
-const Slider = () => {
+import { RiCss3Fill, RiHtml5Fill, RiTailwindCssFill } from "react-icons/ri";
+const SliderLerns= () => {
   useEffect(() => {
     new Swiper(".blog-slider", {
       spaceBetween: 30,
@@ -23,25 +24,12 @@ const Slider = () => {
   }, []);
   const landingpages = [
     {
-      gif: "/restaurante.png",
-      title: i18n.t("creations.projects.restaurante.title"),
-      date: i18n.t("creations.projects.restaurante.date"),
-      description: i18n.t("creations.projects.restaurante.description"),
-      url: i18n.t("creations.projects.restaurante.url"),
-    },
-    {
-      gif: "/academia.png",
-      title: i18n.t("creations.projects.academia.title"),
-      date: i18n.t("creations.projects.academia.date"),
-      description: i18n.t("creations.projects.academia.description"),
-      url: i18n.t("creations.projects.academia.url"),
-    },
-    {
       gif: "/cabeleleiro.png",
       title: i18n.t("creations.projects.cabeleleiro.title"),
       date: i18n.t("creations.projects.cabeleleiro.date"),
       description: i18n.t("creations.projects.cabeleleiro.description"),
       url: i18n.t("creations.projects.cabeleleiro.url"),
+      techs: [RiTailwindCssFill, RiHtml5Fill, RiCss3Fill],
     },
     {
       gif: "/hotel.png",
@@ -49,20 +37,15 @@ const Slider = () => {
       date: i18n.t("creations.projects.hotel.date"),
       description: i18n.t("creations.projects.hotel.description"),
       url: i18n.t("creations.projects.hotel.url"),
+      techs: [RiTailwindCssFill, RiHtml5Fill, RiCss3Fill],
     },
     {
-      gif: "/advocacia.mp4",
+      gif: "/advocacia.png",
       title: i18n.t("creations.projects.advocacia.title"),
       date: i18n.t("creations.projects.advocacia.date"),
       description: i18n.t("creations.projects.advocacia.description"),
       url: i18n.t("creations.projects.advocacia.url"),
-    },
-    {
-      gif: "/petshop.png",
-      title: i18n.t("creations.projects.petshop.title"),
-      date: i18n.t("creations.projects.petshop.date"),
-      description: i18n.t("creations.projects.petshop.description"),
-      url: i18n.t("creations.projects.petshop.url"),
+      techs: [RiTailwindCssFill, RiHtml5Fill, RiCss3Fill],
     },
   ];
   return (
@@ -78,4 +61,4 @@ const Slider = () => {
   );
 };
 
-export { Slider };
+export { SliderLerns};

@@ -47,8 +47,9 @@ const messages = {
         titles: {
           one: "creations",
           two: "See more.",
-          three:"See less.",
+          three: "See less.",
           have: "DO YOU HAVE A PROJECT IN MIND AND WOULD YOU LIKE TO INCLUDE MYSELF IN THE TEAM?",
+          see_deploy: "SEE DEPLOY"
         },
         projects: {
           ecommerce: {
@@ -58,53 +59,29 @@ const messages = {
               features: "features",
             },
           },
-          restaurante: {
-            gif: "/restaurante.png",
-            title: "Savory Bites Eatery",
-            date: "Established in 2010",
-            description:
-              "Savory Bites Eatery offers a fusion of international flavors with a focus on locally sourced ingredients. From mouthwatering steaks to delicate sushi rolls, our menu caters to diverse palates. Enjoy a cozy ambiance and impeccable service for a memorable dining experience.",
-            url: "www.savorybiteseatery.com",
-          },
-          academia: {
-            gif: "/academia.png",
-            title: "Peak Performance Fitness",
-            date: "Founded in 2005",
-            description:
-              "At Peak Performance Fitness, we're dedicated to helping you achieve your fitness goals. Our state-of-the-art facilities include top-of-the-line equipment, personalized training programs, and a variety of classes to suit all fitness levels. Join our community and embark on a journey to a healthier lifestyle.",
-            url: "www.peakperformancefitness.com",
-          },
           cabeleleiro: {
             gif: "/cabeleleiro.png",
-            title: "Glamour Locks Salon & Spa",
+            title: "Studio 77",
             date: "Serving since 1998",
             description:
-              "Step into luxury at Glamour Locks Salon & Spa, where expert stylists and estheticians pamper you from head to toe. Whether you're looking for a bold new hairstyle, a rejuvenating facial, or a relaxing massage, our team is dedicated to making you look and feel your best.",
-            url: "www.glamourlocks.com",
+              "Each cut is a work of art, comfort, style and confidence. Here, every detail is designed to highlight your personality and raise your self-esteem. Come transform your look, relax and live a unique experience.",
+            url: "https://ldp-barber.vercel.app/",
           },
           hotel: {
             gif: "/hotel.png",
-            title: "Serene Haven Resort & Spa",
+            title: "Oasis Radiant",
             date: "Welcoming guests since 2003",
             description:
-              "Nestled amidst breathtaking natural landscapes, Serene Haven Resort & Spa offers a tranquil retreat for the discerning traveler. Indulge in luxurious accommodations, gourmet dining, and rejuvenating spa treatments, all while surrounded by unparalleled beauty and serenity.",
-            url: "www.serenehavenresort.com",
+              "At Oasis Radiant, we believe that hospitality goes beyond hosting. Our mission is to create a welcoming and sophisticated environment where our guests feel at home. Our dedicated team is ready to attend to all your needs cordially.",
+            url: "https://ldp-hotel.vercel.app/",
           },
           advocacia: {
-            gif: "/advocacia.mp4",
-            title: "Justice Partners Legal Group",
+            gif: "/advocacia.png",
+            title: "Elysium Advocacia",
             date: "Established in 1995",
             description:
-              "At Justice Partners Legal Group, we're committed to providing expert legal counsel and representation with integrity and compassion. Our team of experienced attorneys specializes in various areas of law, ensuring that your legal needs are met with professionalism and dedication.",
-            url: "www.justicepartnerslegal.com",
-          },
-          petshop: {
-            gif: "/petshop.png",
-            title: "Paws & Claws Pet Emporium",
-            date: "Serving furry friends since 2007",
-            description:
-              "Paws & Claws Pet Emporium is your one-stop shop for all your pet's needs. From premium pet food and toys to grooming services and expert advice, we're passionate about providing exceptional care for your beloved companions.",
-            url: "www.pawsandclaws.com",
+              "Elysium Advocacia was founded in 1998, with its trajectory built on solid foundations, based on a relationship of trust with its clients. The office operates throughout the country, representing individuals and legal entities, always guided by professional ethics.",
+            url: "https://ldp-advocacia.vercel.app/",
           },
         },
       },

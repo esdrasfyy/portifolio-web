@@ -35,6 +35,7 @@ function Contact() {
           <ul className="flex flex-col justify-between w-[309px] max-md:gap-5">
             <li className="w-full">
               <ButtonDefault
+                href="#"
                 content="LINKEDIN"
                 Icon={LiaLinkedinIn}
                 iconStyles={`text-[15px] py-[0.10rem] px-[0.135rem] flex items-center justify-center rounded-full ${
@@ -46,6 +47,7 @@ function Contact() {
             </li>
             <li className="w-full">
               <ButtonDefault
+                href="#"
                 content="GITHUB"
                 Icon={FaGithub}
                 iconStyles="text-xl"
@@ -53,6 +55,7 @@ function Contact() {
             </li>
             <li className="w-full">
               <ButtonDefault
+                href="#"
                 content="DISCORD"
                 Icon={FaDiscord}
                 iconStyles="text-lg"
@@ -60,6 +63,7 @@ function Contact() {
             </li>
             <li className="w-full">
               <ButtonDefault
+                href="#"
                 content="WHATSAPP"
                 Icon={SiWhatsapp}
                 iconStyles="text-lg"
@@ -85,6 +89,7 @@ function Contact() {
                 </span>
               </div>
               <ButtonDefault
+                href="#"
                 content="SEND EMAIL"
                 Icon={IoIosMail}
                 iconStyles="text-lg"

@@ -1,9 +1,8 @@
+"use client"
 import { i18n } from "@/app/translate/i18n";
-import { Timeline } from "antd";
 import Image from "next/image";
 import React from "react";
 import { MdArrowLeft, MdArrowRight } from "react-icons/md";
-import { PiSignpostLight } from "react-icons/pi";
 
 function About() {
   return (

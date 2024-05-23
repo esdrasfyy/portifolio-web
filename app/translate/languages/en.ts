@@ -49,7 +49,7 @@ const messages = {
           two: "See more.",
           three: "See less.",
           have: "DO YOU HAVE A PROJECT IN MIND AND WOULD YOU LIKE TO INCLUDE MYSELF IN THE TEAM?",
-          see_deploy: "SEE DEPLOY"
+          see_deploy: "SEE DEPLOY",
         },
         projects: {
           ecommerce: {

@@ -6,6 +6,7 @@ import { useContext } from "react";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { PiGithubLogoFill } from "react-icons/pi";
 import { i18n } from "./translate/i18n";
+import Link from "next/link";
 
 export default function Home() {
   const context = useContext(ContextPreferences!)!;
@@ -15,9 +16,9 @@ export default function Home() {
       <BackgroundHome />
       <div className="z-50 flex w-full min-h-[90vh] justify-between px-12 max-sm:px-4 relative">
         <aside className="flex h-full justify-end flex-col items-center gap-4 max-sm:hidden">
-          <button className="text-3xl">
+          <Link href="https://github.com/esdrasfyy" target="_blank" className="text-3xl">
             <PiGithubLogoFill />
-          </button>
+          </Link>
           <span
             className={`w-[1px] h-72 ${
               theme === "dark" ? "bg-[#fff]" : "bg-[#000]"
@@ -622,9 +623,9 @@ export default function Home() {
           </div>
           <div className="flex w-full text-sm max-sm:text-xs justify-between max-sm:flex-col gap-7 uppercase pb-4">
             <div className="items-center gap-4 justify-end hidden max-sm:flex">
-              <button className="text-2xl">
+              <Link href="https://www.linkedin.com/in/esdrasfyy/" target="_blank" className="text-2xl">
                 <LiaLinkedinIn />
-              </button>
+              </Link>
               <span
                 className={`h-[1px] w-1/2 ${
                   theme === "dark" ? "bg-[#fff]" : "bg-[#000]"

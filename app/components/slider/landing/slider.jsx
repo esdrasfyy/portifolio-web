@@ -47,6 +47,14 @@ const SliderLandingPages = () => {
       url: i18n.t("creations.projects.cabeleleiro.url"),
       techs: [RiTailwindCssFill, RiHtml5Fill, RiCss3Fill],
     },
+    {
+      gif: "/petshop.png",
+      title: i18n.t("creations.projects.cabeleleiro.title"),
+      date: i18n.t("creations.projects.cabeleleiro.date"),
+      description: i18n.t("creations.projects.cabeleleiro.description"),
+      url: i18n.t("creations.projects.cabeleleiro.url"),
+      techs: [RiTailwindCssFill, RiHtml5Fill, RiCss3Fill],
+    },
   ];
   return (
     <div className="blog-slider w-full max-w-[800px] relative border-[1px] border-[var(--color-text-primary)] p-7 rounded-md h-[400px] transition-all duration-300">

@@ -14,12 +14,12 @@ const messages = {
           one: "WELCOME",
           two: "TO",
           three: "MY",
-          four: "PORTIFOLIO",
+          four: "PORTFOLIO",
           five: "by",
         },
         text: {
-          one: "DESENVOLVEDOR FULLSTACK EXPERIENTE ATUALMENTE BUSCANDO NOVAS OPORTUNIDADES DE EMPREGO.",
-          two: "FOCADO NO DESENVOLVIMENTO DE BACKEND E FRONTEND, TRABALHANDO REMOTAMENTE DE SÃO PAULO - BRASIL.",
+          one: "FULLSTACK DEVELOPER CURRENTLY LOOKING FOR NEW JOB OPPORTUNITIES.",
+          two: "FOCUSED ON BACKEND AND FRONTEND DEVELOPMENT, WORKING REMOTELY FROM SÃO PAULO - BRAZIL.",
         },
       },
       about: {
@@ -36,6 +36,10 @@ const messages = {
           one: "ABOUT",
           two: "ME",
           three: "RESUME",
+        },
+        other: {
+          title: "OTHERS SKILLS",
+          text: "Cloud, Docker, Seo, UI/UX, Git/GitHub, Responsiveness, Communication, Leadership, Resilience...",
         },
       },
       contact: {
@@ -82,6 +86,46 @@ const messages = {
             description:
               "Elysium Advocacia was founded in 1998, with its trajectory built on solid foundations, based on a relationship of trust with its clients. The office operates throughout the country, representing individuals and legal entities, always guided by professional ethics.",
             url: "https://ldp-advocacia.vercel.app/",
+          },
+          petshop: {
+            gif: "/petshop.png",
+            title: "Pet & Companhia",
+            date: "Established in 2010",
+            description:
+              "At Pet & Companhia, we believe that each animal deserves the best care possible. Our mission is to create an environment where pets and their owners feel welcome and safe. Come visit us and discover why Pet & Companhia is the right choice for your furry friend. Here, we care for your pet with love and dedication, as if it were our own. ",
+            url: "https://ldp-pethsop.vercel.app/",
+          },
+          notes: {
+            gif: "/notes.png",
+            title: "Just Notes",
+            date: "Created in 2023",
+            description:
+              "I created this modern to-do list with the purpose of helping me with my studies, allowing me to jot down important and detailed topics for each technology I am learning. With this approach, I can better organize my learning process and review concepts more efficiently.",
+            url: "https://notes.esdras.dev/",
+          },
+          cuba: {
+            gif: "/cuba.png",
+            title: "Cuba Community",
+            date: "Created in 2023",
+            description:
+              "I'm involved in an open-source project where I work on both backend and frontend. The project revolves around a community for developers, merging aspects of Stack Overflow with a Twitter-like platform. In this community, developers can interact and collaborate, sharing knowledge and assisting each other with their code.",
+            url: "https://github.com/Maelzin13/projeto_cuba_back",
+          },
+          urbanvogue: {
+            gif: "/ecommerce.png",
+            title: "Urban Vogue",
+            date: "Created in 2024",
+            description:
+              "Urban Vogue, my ecommerce learning project, is where I explore different tech tools and techniques. It's a space for me to grow and experiment—from designing the frontend to setting up the backend. Through trendy fashion items, Urban Vogue isn't just a project; it's my journey of discovery in web development.",
+            url: "https://urbanvogue.cloud",
+          },
+          others: {
+            gif: "/github.png",
+            title: "Others Projects",
+            date: "Created in 2023",
+            description:
+              "In addition, I have many other small projects on my GitHub, covering a range of technologies and concepts. These projects range from simple experiments to more robust applications, all available for exploration and contribution.",
+            url: "https://github.com/esdrasfyy",
           },
         },
       },

@@ -35,7 +35,7 @@ function Contact() {
           <ul className="flex flex-col justify-between w-[309px] max-md:gap-5">
             <li className="w-full">
               <ButtonDefault
-                href="#"
+                href="https://www.linkedin.com/in/esdrasfyy/"
                 content="LINKEDIN"
                 Icon={LiaLinkedinIn}
                 iconStyles={`text-[15px] py-[0.10rem] px-[0.135rem] flex items-center justify-center rounded-full ${
@@ -47,7 +47,7 @@ function Contact() {
             </li>
             <li className="w-full">
               <ButtonDefault
-                href="#"
+                href="https://github.com/esdrasfyy"
                 content="GITHUB"
                 Icon={FaGithub}
                 iconStyles="text-xl"
@@ -63,7 +63,7 @@ function Contact() {
             </li>
             <li className="w-full">
               <ButtonDefault
-                href="#"
+                href="https://wa.link/9odm57"
                 content="WHATSAPP"
                 Icon={SiWhatsapp}
                 iconStyles="text-lg"
@@ -89,7 +89,7 @@ function Contact() {
                 </span>
               </div>
               <ButtonDefault
-                href="#"
+                href="mailto:contatoesdrasoficial@gmail.com"
                 content="SEND EMAIL"
                 Icon={IoIosMail}
                 iconStyles="text-lg"

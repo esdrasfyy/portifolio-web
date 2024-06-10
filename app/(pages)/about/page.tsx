@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { i18n } from "@/app/translate/i18n";
 import Image from "next/image";
 import React from "react";
@@ -15,9 +15,7 @@ function About() {
         <div className="flex relative justify-center items-center max-w-[515px] max-lg:max-w-[430px] max-md:max-w-[390px] max-sm:mx-auto max-sm:max-w-[490px]">
           <span className="absolute w-20 rounded-sm h-[115%] top-[-7%] left-12 bg-[white]  mix-blend-difference max-sm:left-1/2 max-sm:translate-x-[-50%] max-sm:w-10"></span>
           <h2 className="font-extrabold text-7xl text-primary w-full max-lg:text-6xl max-md:text-5xl max-sm:text-3xl max-sm:text-center">
-            <span>
-            {i18n.t("about.text.one")}
-            </span>
+            <span>{i18n.t("about.text.one")}</span>
           </h2>
         </div>
         <div className="max-w-[700px] w-full flex justify-center items-center flex-col gap-8 max-sm:mt-20">
@@ -31,18 +29,18 @@ function About() {
               </h3>
               <p className="text-sm max-md:text-xs text-primary/30 uppercase w-full text-end">
                 React.Js, Next.Js, NextAuth, JavaScript (ES6+), TypeScript,
-                Redux, Redux Toolkit, Wordpress, HTML5, Git/GitHub.
+                Redux, HTML5, CSS3, Tailwind CSS...
               </p>
             </div>
           </div>
           <div className="w-full flex items-center justify-center gap-12 max-sm:gap-4">
             <div className="w-full flex flex-col border-[1px] border-[var(--color-text-primary)] rounded-md  p-4 max-sm:min-w-[250px]">
               <h3 className="text-xl font-semibold mb-4 max-sm:text-sm">
-                FRONT-END SKILLS
+                BACK-END SKILLS
               </h3>
               <p className="text-sm max-md:text-xs text-primary/30 uppercase w-full">
-                React.Js, Next.Js, NextAuth, JavaScript (ES6+), TypeScript,
-                Redux, Redux Toolkit, Wordpress, HTML5, Git/GitHub.
+                JavaScript (ES6+), TypeScript, Express.js, Sequelize, Prisma,
+                SQL, NoSQL,Next.js, Strapi, Mercado Pago, Socket.IO...
               </p>
             </div>
             <div className="w-full max-xl:hidden max-sm:flex flex items-center justify-center">
@@ -55,11 +53,10 @@ function About() {
             </div>
             <div className="w-full flex flex-col items-end  border-[1px] border-[var(--color-text-primary)] rounded-md  p-4 max-sm:min-w-[250px]">
               <h3 className="text-xl font-semibold mb-4 max-sm:text-sm">
-                FRONT-END SKILLS
+              {i18n.t("about.other.title")}
               </h3>
               <p className="text-sm max-md:text-xs text-primary/30 uppercase w-full text-end">
-                React.Js, Next.Js, NextAuth, JavaScript (ES6+), TypeScript,
-                Redux, Redux Toolkit, Wordpress, HTML5, Git/GitHub.
+              {i18n.t("about.other.text")}
               </p>
             </div>
           </div>
@@ -86,13 +83,9 @@ function About() {
         <div className="flex border-[var(--color-text-primary)] border-[1px] p-4 rounded-md w-full max-w-[660px] max-sm:text-center max-sm:border-none relative">
           <div className="w-full">
             <h3 className="text-xl font-semibold mb-4 max-sm:text-xl relative">
-              <span className="line">
-             {i18n.t("about.titles.three")}
-              </span>
+              <span className="line">{i18n.t("about.titles.three")}</span>
             </h3>
-            <p className="max-md:text-sm ">
-            {i18n.t("about.text.two")}
-            </p>
+            <p className="max-md:text-sm ">{i18n.t("about.text.two")}</p>
           </div>
           <span className="absolute -right-12 -top-[60px]  border-[var(--color-text-primary)] border-[1px] min-w-[200px] h-[200px] z-10 opacity-50 max-sm:hidden"></span>
           <span className="absolute -right-16 -top-10  border-[var(--color-text-primary)] border-[1px] min-w-[200px] h-[200px] z-10 opacity-50 max-sm:hidden"></span>
@@ -110,28 +103,36 @@ function About() {
         </div>
         <div className="w-full flex justify-between mt-28 max-sm:flex-col max-sm:gap-28">
           <div className="w-full max-sm:text-center">
-            <h4 className="text-xl ml-2 mb-5 uppercase">{i18n.t("about.text.school")}</h4>
+            <h4 className="text-xl ml-2 mb-5 uppercase">
+              {i18n.t("about.text.school")}
+            </h4>
             <ul className="flex flex-col gap-4 max-sm:items-center">
               <li className="flex gap-3 items-center text-xs font-medium uppercase">
                 {" "}
                 <span>
                   <MdArrowRight className="text-lg opacity-25" />
                 </span>{" "}
-                <span>Escola da Nuvem - {i18n.t("about.text.three")} 16/06/2024</span>
+                <span>
+                  Escola da Nuvem - {i18n.t("about.text.three")} 16/06/2024
+                </span>
               </li>
               <li className="flex gap-3 items-center text-xs font-medium uppercase">
                 {" "}
                 <span>
                   <MdArrowRight className="text-lg opacity-25" />
                 </span>{" "}
-                <span>Hackers do Bem -  {i18n.t("about.text.three")} 02/02/2024</span>
+                <span>
+                  Hackers do Bem - {i18n.t("about.text.three")} 02/02/2024
+                </span>
               </li>
               <li className="flex gap-3 items-center text-xs font-medium uppercase">
                 {" "}
                 <span>
                   <MdArrowRight className="text-lg opacity-25" />
                 </span>{" "}
-                <span>ADS Anhanguera -  {i18n.t("about.text.three")} 01/07/2024</span>
+                <span>
+                  ADS Anhanguera - {i18n.t("about.text.three")} 01/07/2024
+                </span>
               </li>
               <li className="flex gap-3 items-center text-xs font-medium uppercase">
                 {" "}
@@ -146,18 +147,25 @@ function About() {
             <span className="w-14 h-14 max-sm:w-8 max-sm:h-8 rotate-45 border-[1px] border-[var(--color-text-primary)] opacity-50"></span>
           </div>
           <div className="w-full min-h-full">
-            <h4 className="text-xl mr-2 mb-5 text-end max-sm:text-center uppercase">{i18n.t("about.text.experiece")}</h4>
+            <h4 className="text-xl mr-2 mb-5 text-end max-sm:text-center uppercase">
+              {i18n.t("about.text.experiece")}
+            </h4>
             <ul className="flex flex-col gap-4 justify-end items-end max-sm:items-center">
               <li className="flex gap-3 items-center text-xs font-medium uppercase max-sm:flex-row-reverse">
                 {" "}
-                <span>{i18n.t("about.text.studies")}  - {i18n.t("about.text.three")} 19/01/2023</span>
+                <span>
+                  {i18n.t("about.text.studies")} - {i18n.t("about.text.three")}{" "}
+                  19/01/2023
+                </span>
                 <span>
                   <MdArrowLeft className="text-lg opacity-25 max-sm:rotate-180" />
                 </span>{" "}
               </li>
               <li className="flex gap-3 items-center text-xs font-medium uppercase max-sm:flex-row-reverse">
                 {" "}
-                <span>FREELANCES - {i18n.t("about.text.three")}  20/06/2024</span>
+                <span>
+                  FREELANCES - {i18n.t("about.text.three")} 10/06/2024
+                </span>
                 <span>
                   <MdArrowLeft className="text-lg opacity-25 max-sm:rotate-180" />
                 </span>{" "}

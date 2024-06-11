@@ -53,10 +53,10 @@ function About() {
             </div>
             <div className="w-full flex flex-col items-end  border-[1px] border-[var(--color-text-primary)] rounded-md  p-4 max-sm:min-w-[250px]">
               <h3 className="text-xl font-semibold mb-4 max-sm:text-sm">
-              {i18n.t("about.other.title")}
+                {i18n.t("about.other.title")}
               </h3>
               <p className="text-sm max-md:text-xs text-primary/30 uppercase w-full text-end">
-              {i18n.t("about.other.text")}
+                {i18n.t("about.other.text")}
               </p>
             </div>
           </div>
@@ -89,10 +89,10 @@ function About() {
           </div>
           <span className="absolute -right-12 -top-[60px]  border-[var(--color-text-primary)] border-[1px] min-w-[200px] h-[200px] z-10 opacity-50 max-sm:hidden"></span>
           <span className="absolute -right-16 -top-10  border-[var(--color-text-primary)] border-[1px] min-w-[200px] h-[200px] z-10 opacity-50 max-sm:hidden"></span>
-          <div className="w-fit object-fill translate-x-20 -translate-y-14 max-sm:hidden">
+          <div className="w-fit object-fill translate-x-20 -translate-y-14 duration-300 ease-linear max-sm:hidden grayscale hover:grayscale-0">
             <Image
               alt=""
-              src="/model.jpeg"
+              src="/profile1.jpg"
               quality={100}
               priority
               width={100}

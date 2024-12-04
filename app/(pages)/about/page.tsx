@@ -24,24 +24,14 @@ function About() {
               <span className="w-14 h-14 max-sm:w-8 max-sm:h-8 rotate-45 border-[1px] border-[var(--color-text-primary)] opacity-50"></span>
             </div>
             <div className="w-full flex flex-col items-end  border-[1px] border-[var(--color-text-primary)] rounded-md  p-4 max-sm:min-w-[250px]">
-              <h3 className="text-xl font-semibold mb-4 max-sm:text-sm">
-                FRONT-END SKILLS
-              </h3>
-              <p className="text-sm max-md:text-xs text-primary/30 uppercase w-full text-end">
-                React.Js, Next.Js, NextAuth, JavaScript (ES6+), TypeScript,
-                Redux, HTML5, CSS3, Tailwind CSS...
-              </p>
+              <h3 className="text-xl font-semibold mb-4 max-sm:text-sm">FRONT-END SKILLS</h3>
+              <p className="text-sm max-md:text-xs text-primary/30 uppercase w-full text-end">React.Js, Next.Js, NextAuth, JavaScript (ES6+), TypeScript, Redux, HTML5, CSS3, Tailwind CSS...</p>
             </div>
           </div>
           <div className="w-full flex items-center justify-center gap-12 max-sm:gap-4">
             <div className="w-full flex flex-col border-[1px] border-[var(--color-text-primary)] rounded-md  p-4 max-sm:min-w-[250px]">
-              <h3 className="text-xl font-semibold mb-4 max-sm:text-sm">
-                BACK-END SKILLS
-              </h3>
-              <p className="text-sm max-md:text-xs text-primary/30 uppercase w-full">
-                JavaScript (ES6+), TypeScript, Express.js, Sequelize, Prisma,
-                SQL, NoSQL,Next.js, Strapi, Mercado Pago, Socket.IO...
-              </p>
+              <h3 className="text-xl font-semibold mb-4 max-sm:text-sm">BACK-END SKILLS</h3>
+              <p className="text-sm max-md:text-xs text-primary/30 uppercase w-full">JavaScript (ES6+), TypeScript, Express.js, Sequelize, Prisma, SQL, NoSQL,Next.js, Strapi, Mercado Pago, Socket.IO...</p>
             </div>
             <div className="w-full max-xl:hidden max-sm:flex flex items-center justify-center">
               <span className="w-14 h-14 max-sm:w-8 max-sm:h-8 rotate-45 border-[1px] border-[var(--color-text-primary)] opacity-50"></span>
@@ -52,23 +42,14 @@ function About() {
               <span className="w-14 h-14 max-sm:w-8 max-sm:h-8 rotate-45 border-[1px] border-[var(--color-text-primary)] opacity-50"></span>
             </div>
             <div className="w-full flex flex-col items-end  border-[1px] border-[var(--color-text-primary)] rounded-md  p-4 max-sm:min-w-[250px]">
-              <h3 className="text-xl font-semibold mb-4 max-sm:text-sm">
-                {i18n.t("about.other.title")}
-              </h3>
-              <p className="text-sm max-md:text-xs text-primary/30 uppercase w-full text-end">
-                {i18n.t("about.other.text")}
-              </p>
+              <h3 className="text-xl font-semibold mb-4 max-sm:text-sm">{i18n.t("about.other.title")}</h3>
+              <p className="text-sm max-md:text-xs text-primary/30 uppercase w-full text-end">{i18n.t("about.other.text")}</p>
             </div>
           </div>
         </div>
       </section>
       <div className="my-24 max-sm:my-12">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="132"
-          height="15"
-          viewBox="0 0 132 15"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="132" height="15" viewBox="0 0 132 15">
           <g id="Page-1" fill="none" fillRule="evenodd">
             <g id="Artboard-2" fill="var(--color-text-primary)" opacity={0.5}>
               <path
@@ -79,98 +60,16 @@ function About() {
           </g>
         </svg>
       </div>
-      <section className="flex w-full  mt-12 items-center flex-col pb-24 max-sm:pb-28">
-        <div className="flex border-[var(--color-text-primary)] border-[1px] p-4 rounded-md w-full max-w-[660px] max-sm:text-center max-sm:border-none relative">
-          <div className="w-full">
-            <h3 className="text-xl font-semibold mb-4 max-sm:text-xl relative">
-              <span className="line">{i18n.t("about.titles.three")}</span>
-            </h3>
-            <p className="max-md:text-sm ">{i18n.t("about.text.two")}</p>
-          </div>
-          <span className="absolute -right-12 -top-[60px]  border-[var(--color-text-primary)] border-[1px] min-w-[200px] h-[200px] z-10 opacity-50 max-sm:hidden"></span>
-          <span className="absolute -right-16 -top-10  border-[var(--color-text-primary)] border-[1px] min-w-[200px] h-[200px] z-10 opacity-50 max-sm:hidden"></span>
-          <div className="w-fit object-fill translate-x-20 -translate-y-14 duration-300 ease-linear max-sm:hidden grayscale hover:grayscale-0">
-            <Image
-              alt=""
-              src="/profile1.jpg"
-              quality={100}
-              priority
-              width={100}
-              height={100}
-              className="min-w-[200px] h-[200px]"
-            />
-          </div>
+      <section className="flex gap-10 w-full max-w-[1050px] pb-24">
+        <div className="w-2/5">
+          <Image src="/profile.jpg" quality={100} alt="" height={400} width={330} className="w-96 h-[500px] grayscale rounded-xl" />
         </div>
-        <div className="w-full flex justify-between mt-28 max-sm:flex-col max-sm:gap-28">
-          <div className="w-full max-sm:text-center">
-            <h4 className="text-xl ml-2 mb-5 uppercase">
-              {i18n.t("about.text.school")}
-            </h4>
-            <ul className="flex flex-col gap-4 max-sm:items-center">
-              <li className="flex gap-3 items-center text-xs font-medium uppercase">
-                {" "}
-                <span>
-                  <MdArrowRight className="text-lg opacity-25" />
-                </span>{" "}
-                <span>
-                  Escola da Nuvem - {i18n.t("about.text.three")} 16/06/2024
-                </span>
-              </li>
-              <li className="flex gap-3 items-center text-xs font-medium uppercase">
-                {" "}
-                <span>
-                  <MdArrowRight className="text-lg opacity-25" />
-                </span>{" "}
-                <span>
-                  Hackers do Bem - {i18n.t("about.text.three")} 02/02/2024
-                </span>
-              </li>
-              <li className="flex gap-3 items-center text-xs font-medium uppercase">
-                {" "}
-                <span>
-                  <MdArrowRight className="text-lg opacity-25" />
-                </span>{" "}
-                <span>
-                  ADS Anhanguera - {i18n.t("about.text.three")} 01/07/2024
-                </span>
-              </li>
-              <li className="flex gap-3 items-center text-xs font-medium uppercase">
-                {" "}
-                <span>
-                  <MdArrowRight className="text-lg opacity-25" />
-                </span>{" "}
-                <span> {i18n.t("about.text.english")}</span>
-              </li>
-            </ul>
-          </div>
-          <div className="w-full max-xl:hidden flex items-center justify-center">
-            <span className="w-14 h-14 max-sm:w-8 max-sm:h-8 rotate-45 border-[1px] border-[var(--color-text-primary)] opacity-50"></span>
-          </div>
-          <div className="w-full min-h-full">
-            <h4 className="text-xl mr-2 mb-5 text-end max-sm:text-center uppercase">
-              {i18n.t("about.text.experiece")}
-            </h4>
-            <ul className="flex flex-col gap-4 justify-end items-end max-sm:items-center">
-              <li className="flex gap-3 items-center text-xs font-medium uppercase max-sm:flex-row-reverse">
-                {" "}
-                <span>
-                  {i18n.t("about.text.studies")} - {i18n.t("about.text.three")}{" "}
-                  19/01/2023
-                </span>
-                <span>
-                  <MdArrowLeft className="text-lg opacity-25 max-sm:rotate-180" />
-                </span>{" "}
-              </li>
-              <li className="flex gap-3 items-center text-xs font-medium uppercase max-sm:flex-row-reverse">
-                {" "}
-                <span>
-                  FREELANCES - {i18n.t("about.text.three")} 10/06/2024
-                </span>
-                <span>
-                  <MdArrowLeft className="text-lg opacity-25 max-sm:rotate-180" />
-                </span>{" "}
-              </li>
-            </ul>
+        <div className="w-3/5 my-auto flex flex-col gap-5">
+          <p className="font-medium tracking-wide text-justify">Sou Apaixonado por transformar ideias em soluções reais, adoro desafios e aprendizado contínuo. Comecei de forma autônoma com HTML e CSS, avançando para tecnologias como Next.js, React, TypeScript e Tailwind para criar interfaces dinâmicas. Depois, aprofundei-me no backend com Nest.js e Express, que se tornaram essenciais no meu trabalho.</p>
+          <hr className="mt-12" />
+          <div>
+            <h3 className="font-bold">-- Fernando Esdras da Silva</h3>
+            <h4 className="ml-7 font-bold opacity-30 text-xs">FULLSTACK DEVELOPER</h4>
           </div>
         </div>
       </section>

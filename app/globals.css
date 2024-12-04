@@ -437,4 +437,7 @@
   border-radius: 5px !important;
   background-color: var(--color-bg-secondary) !important;
 }
-
+.writing {
+  writing-mode: sideways-lr;
+  text-orientation: upright;
+}

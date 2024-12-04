@@ -4,7 +4,39 @@ import { Header } from "./components/header/header";
 import { Cursor } from "./utils/cursor/cursor";
 import { ProviderPreferences } from "./contexts/ContextPreferences";
 import { TransitionPage } from "./components/transition-page/transition-page";
+import { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "Esdras Developer",
+  description: "Olá, meu nome é Fernando Esdras da Silva, tenho 18 anos e sou programador fullstack. Apaixonado por tecnologia, desenvolvo soluções completas e inovadoras, desde o backend até o frontend. Explore meu portfólio para conhecer meus projetos e habilidades.",
+  viewport: "width=device-width, initial-scale=1.0",
+  themeColor: "#161616",
+  icons: {
+    icon: "/favicon1.ico",
+  },
+  openGraph: {
+    locale: "pt-BR",
+    title: "Esdras Developer",
+    siteName: "Esdras Developer",
+    type: "website",
+    description: "Olá, meu nome é Fernando Esdras da Silva, tenho 18 anos e sou programador fullstack. Apaixonado por tecnologia, desenvolvo soluções completas e inovadoras, desde o backend até o frontend. Explore meu portfólio para conhecer meus projetos e habilidades.",
+    url: "https://esdras.dev/",
+    images: [
+      {
+        url: "/favicon1.ico",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://esdras.dev/",
+  },
+  keywords: ["Fernando Esdras da Silva", "Esdras", "Esdras Silva", "programador", "fullstack", "dev", "desenvolvedor", "São Paulo", "SP", "Brasil", "Brazil", "América", "React", "Next.js", "React.js", "Next.js", "HTML5", "CSS3", "landing page", "ecommerce", "site", "freela", "freelancer", "melhor", "melhores", "perto de mim", "Node", "Backend", "Frontend", "Next", "Nest", "SQL", "NoSQL", "MySql", "Javascript", "Typescript", "React Native", "Docker", "AWS", "Azure", "Cloud", "Api"],
+  authors: [
+    { name: "Fernando Esdras", url: "https://github.com/esdrasfyy" },
+    { name: "João Silva", url: "https://github.com/joajo" },
+  ],
+};
 
 export default function RootLayout({
   children,
@@ -13,45 +45,8 @@ export default function RootLayout({
 }>) {
   return (
     <ProviderPreferences>
-      <html lang="pt">
-        <head>
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"
-          />
-          <meta charSet="UTF-8" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <meta property="og:locale" content="pt-BR" />
-          <meta name="theme-color" content="#161616" />
-          <link rel="icon" href="/favicon1.ico" />
-          <title>Esdras Dev</title>
-          <meta property="og:title" content="Esdras Dev" />
-          <meta property="og:site_name" content="Esdras Dev" />
-          <meta property="og:type" content="website" />
-          <meta name="revisit-after" content="7 days" />
-          <meta name="author" content="Fernando Esdras da Silva"></meta>
-          <meta
-            name="description"
-            content="Olá, meu nome é Fernando Esdras da Silva, tenho 18 anos e sou programador fullstack. Apaixonado por tecnologia, desenvolvo soluções completas e inovadoras, desde o backend até o frontend. Explore meu portfólio para conhecer meus projetos e habilidades."
-          />
-          <meta
-            property="og:description"
-            content="Olá, meu nome é Fernando Esdras da Silva, tenho 18 anos e sou programador fullstack. Apaixonado por tecnologia, desenvolvo soluções completas e inovadoras, desde o backend até o frontend. Explore meu portfólio para conhecer meus projetos e habilidades."
-          />
-          <link rel="canonical" href="https://esdras.dev/" />
-          <meta property="og:url" content="https://esdras.dev/" />
-          <meta
-            name="keywords"
-            content="Fernando Esdras da Sivca, Esdras, Silva, programador, fullstack, dev, desenvolvedor, São Paulo, SP, Brasil, Brazil, América, React, Next, React.js, Next.js, HTML5, CSS3 landing page, ecommerce, site, freela, freelancer, melhor, melhores, perto de mim, Node, Backend, Frontend, Fullstack, Nest, SQL, NOSQL, MySql, Javascript, Typescript, React NAtive, Docker, AWS, Azure, Cloud, Api"
-          />
-          <meta property="og:image" content="/favicon1.ico" />
-        </head>
-        <body
-          className={`${inter.className} overflow-x-hidden bg-primary text-primary duration-300 transition-all ease-linear scroll-styled`}
-        >
+      <html lang="pt-BR">
+        <body className={`${inter.className} overflow-x-hidden bg-primary text-primary duration-300 transition-all ease-linear scroll-styled`}>
           <TransitionPage />
           {children}
           <Header />

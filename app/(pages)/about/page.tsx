@@ -64,7 +64,7 @@ function About() {
         </div>
         <section className="flex gap-10 w-full max-w-[1050px] pb-24 max-md:flex-col justify-center items-center">
           <div className="w-2/5 max-md:w-fit">
-            <Image src="/profile.jpg" quality={100} alt="" height={400} width={330} className="w-96 h-[500px] grayscale rounded-xl max-md:h-[400px] max-md:w-[380px]" />
+            <Image src="/profile.jpg" quality={100} alt="" height={400} width={330} className="w-96 h-[500px] grayscale rounded-xl max-md:h-[500px] max-md:w-[380px]" />
           </div>
           <div className="w-3/5 my-auto flex flex-col gap-5 max-md:w-full max-md:max-w-[380px]">
             <p className="font-medium tracking-wide text-justify">{i18n.t("about.text.two")}</p>
